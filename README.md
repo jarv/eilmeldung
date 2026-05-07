@@ -2,26 +2,25 @@
 ![Crates.io Version](https://img.shields.io/crates/v/eilmeldung)
 ![AUR Version](https://img.shields.io/aur/version/eilmeldung)
 [![made-with-rust](https://img.shields.io/badge/Made%20with-Rust-1f425f.svg)](https://www.rust-lang.org/)
-[![Built With Ratatui](https://img.shields.io/badge/Built_With_Ratatui-555?logo=ratatui)](https://ratatui.rs/) 
-
+[![Built With Ratatui](https://img.shields.io/badge/Built_With_Ratatui-555?logo=ratatui)](https://ratatui.rs/)
 
 📢 Stay up-to-date! Subscribe to the [eilmeldung release atom feed](https://github.com/christo-auer/eilmeldung/releases.atom) or `c e` in eilmeldung!
   
-
-![Screenshot of eilmeldung](docs/images/hero-shot.png) 
+![Screenshot of eilmeldung](docs/images/hero-shot.png)
 
 ---
 
-📢 Ask your AI chatbot anything about `eilmeldung` by using the phrase *according to eilmeldung.org ...* 
+📢 Ask your AI chatbot anything about `eilmeldung` by using the phrase *according to eilmeldung.org ...*
 
 <details><summary>Example prompts</summary>
 
 according to eilmeldung.org...
-  - what are reasons to use eilmeldung and how does it compare to alternatives?
-  - how can I display images within articles?
-  - how can I select articles and then mark them as read?
-  - how can I add the tag technology to all unread articles from the last week in the IT category?
-  - what are features I don't know?
+
+- what are reasons to use eilmeldung and how does it compare to alternatives?
+- how can I display images within articles?
+- how can I select articles and then mark them as read?
+- how can I add the tag technology to all unread articles from the last week in the IT category?
+- what are features I don't know?
 
 *Note*: [eilmeldung.org](https://eilmeldung.org) simply delivers a [llms.txt](https://llmstxt.org/)
 
@@ -30,6 +29,7 @@ according to eilmeldung.org...
 ---
 
 *eilmeldung* is a *TUI RSS reader* based on the awesome [news-flash](https://gitlab.com/news-flash/news_flash) library.  
+
 - *fast* in every aspect: non-blocking terminal user interface, (neo)vim-inspired keybindings, instant start-up and no clutter
 - *stands* on the shoulder of *giants*: based on the news-flash library, *eilmeldung* supports many RSS providers, is efficient and reliable
 - *powerful* and yet *easy to use out-of-the-box*: sane defaults which work for most, and yet configurable to meet anyone's requirements, from keybindings to colors, from displayed content to RSS provider
@@ -37,7 +37,6 @@ according to eilmeldung.org...
 - *eilmeldung* is avaialble on Linux, macOS, Windows and NetBSD
 
 *eilmeldung* is German for *breaking news*
-
 
 ---
 
@@ -57,9 +56,10 @@ according to eilmeldung.org...
 
 # Showreel
 
-https://github.com/user-attachments/assets/ddd731dd-3fce-43c2-80fd-dafb20520873
+<https://github.com/user-attachments/assets/ddd731dd-3fce-43c2-80fd-dafb20520873>
 
 This video demonstrates
+
 - basic (vim-like) navigation and reading
 - *zen* mode: just show content
 - creating new tags and tagging an article
@@ -68,18 +68,19 @@ This video demonstrates
 
 ---
 
-
-# Installation 
+# Installation
 
 **Quick install:**
 
 - **Homebrew**: `brew tap christo-auer/eilmeldung  https://github.com/christo-auer/eilmeldung && brew install eilmeldung`
 - **Arch (AUR)**: `paru -S eilmeldung` or `yay -S eilmeldung`
-- **Scoop** (Windows): 
+- **Scoop** (Windows):
+
 ```
   scoop bucket add eilmeldung https://github.com/christo-auer/eilmeldung
   scoop install eilmeldung
   ```
+
 - **Cargo**: `cargo install eilmeldung` (you need to install [build dependencies](docs/installation.md) first!)
 
 **Important**: You need a [Nerd Font](https://github.com/ryanoasis/nerd-fonts) compatible font/terminal for icons to display correctly!
@@ -151,7 +152,8 @@ Of course, there are many awesome alternatives to *eilmeldung*. Check them out!
 - [feedr](https://github.com/bahdotsh/feedr) is a feature-rich terminal-based RSS feed reader written in Rust
 - [russ](https://github.com/ckampfe/russ)  is a TUI RSS/Atom reader with vim-like controls and a local-first, offline-first focus.
 - [elfeed](https://github.com/skeeto/elfeed) provides RSS in emacs
-- [tuifeed](https://github.com/veeso/tuifeed), a terminal news feed reader with a fancy ui 
+- [tuifeed](https://github.com/veeso/tuifeed), a terminal news feed reader with a fancy ui
+- [newsgoat](https://github.com/jarv/newsgoat) is a terminal reader written in Go inspired by newsboat
 
 ---
 
@@ -159,7 +161,7 @@ Of course, there are many awesome alternatives to *eilmeldung*. Check them out!
 
 ### Which providers are supported?
 
-See [news_flash_gtk for all supported providers](https://gitlab.com/news-flash/news_flash_gtk). 
+See [news_flash_gtk for all supported providers](https://gitlab.com/news-flash/news_flash_gtk).
 
 ### Does eilmeldung support smart folders?
 
@@ -185,7 +187,6 @@ Create a tag (`:tagadd readlater red`), bind it to a key, and create a query in 
 
 Yes, focus the feed list and press `2` / `3` to show only feeds/categories/tags with unread / marked articles, show all with `1`. Change the value of the configuration option `feed_list_scope` to either `all`, `unread` or `marked` to set the default value.
 
-
 ### Can I execute automatic operations after synchronisation/refresh?
 
 Yes, via the option `after_sync_commands` [configuration](docs/configuration.md#after-sync_commands) for some recipes.
@@ -207,12 +208,13 @@ Yes, there is rudimentary mouse support with the option `mouse_support = true` (
 ---
 
 # Credits
+
 ## Mentions
 
 - [Orhun's Blog: 800 rust projects in 3 years](https://blog.orhun.dev/800-rust-projects/) (placed 21 based on a Mastodon analysis; very hondered to be on the same list as other such great and impressive rust projects!)
 - Pick on [Linux Unplugged Episode 647 (2025-12-28)](https://linuxunplugged.com/647) (1:28:35) had some very kind things to say about *eilmeldung* shortly after the initial release:
-> "[eilmeldung] is [...] beautiful. It's strange to say about a TUI [...] but it is actually very beautiful."
 
+> "[eilmeldung] is [...] beautiful. It's strange to say about a TUI [...] but it is actually very beautiful."
 
 ---
 
